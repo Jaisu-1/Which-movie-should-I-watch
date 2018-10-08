@@ -156,7 +156,7 @@ test_df = pd.DataFrame({'Year-Rank' : year_ranking,
                         'Year':years,
                         'Imdb':imdb_ratings,
                         'Metascore': metascores,
-                        'Votes': votes,
+                        'Votes': num_votes,
                         'Genre': genres, 
                         'Runtime': runtimes, 
                         'Cert': certifications,
@@ -165,7 +165,7 @@ test_df = pd.DataFrame({'Year-Rank' : year_ranking,
                         'Stars': Billings
                         })
 
-test_df.to_csv('out.csv', sep = " ", encoding='utf-8')
+#test_df.to_csv('out.csv', sep = " ", encoding='utf-8')
 
 
 #Step 3: Factorize it to make it as general as possible
